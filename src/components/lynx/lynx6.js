@@ -1,0 +1,137 @@
+
+import "./homePageGrid.css";
+import React from "react";
+
+import Footer from "../Footer";
+
+const LYNX6 = function () {
+    return (
+        <div>
+            <div className="container main-cent" style={{ marginTop: "80px",marginBottom:'30px'}}>
+                <div className="cent">
+                    
+
+
+                <div className="sales">
+                    <h2 className="under"> LH25 2.0</h2>
+                    <hr style={{ margin: "0",borderTop:"5px solid #ddd" }}></hr>
+                       <div className="row no-gutters mt-5 home_row">
+
+                        {/* 2nd row */}
+                        <div className="col-five-equal col-md-4 col-sm-6 mt-3 anime-2 center-card">
+                            <div className="card home_card">
+                                <div className="card-body" style={{ textAlign: "center" }}>
+                                    <a href="https://hikmicrotech.app.box.com/s/dfdw4twyw1u3dimyeeg4e8imi12h8jba/folder/246464455131" target="_blank" rel="noreferrer">
+                                        <img height="100px" width="100px" src="./images/LH25 2.0.jpg" alt="LH25 2.0" />
+                                    </a>
+                                    <h4 className="card-title">PRODUCT PICS </h4>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <div className="col-xl-2 col-md-4 col-sm-6 mt-3 anime-2 center-card">
+                            <div className="card home_card">
+                                <div className="card-body" style={{ textAlign: "center" }}>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeA8Jg0kM83asi-bO_vOw4_Fqsg5B1ST1doFLCzR8fd2VjkCA/viewform?usp=send_form" target="_blank" rel="noreferrer">
+                                        <img height="100px" width="100px" src="./images/excel.png" alt="B2B Portal" />
+                                    </a>
+                                    <h4 className="card-title">SPECS SHEET </h4>
+                                </div>
+                            </div>
+                        </div> */}
+                        <div className="col-five-equal col-md-4 col-sm-6 mt-3 anime-2 center-card">
+                            <div className="card home_card">
+                                <div className="card-body" style={{ textAlign: "center" }}>
+                                    <a href="https://hikmicrotech.app.box.com/s/dfdw4twyw1u3dimyeeg4e8imi12h8jba/folder/246462640173" target="_blank" rel="noreferrer">
+                                        <img height="100px" width="100px" src="./images/mood.jpg" alt="Huntsman Webpage" />
+                                    </a>
+                                    <h4 className="card-title">MOOD PICS </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-five-equal col-md-4 col-sm-6 mt-3 anime-2 center-card">
+                            <div className="card home_card">
+                                <div className="card-body" style={{ textAlign: "center" }}>
+                                    <a href="https://drive.google.com/drive/folders/1u-FhEBKoEyj2LFrnTDzzSluQno2M7JCX" target="_blank" rel="noreferrer">
+                                        <img height="100px" width="100px" src="./images/b2b.png" alt="B2B Portal" />
+                                    </a>
+                                    <h4 className="card-title">B2B PICS</h4>
+                                </div>
+                            </div>
+                        </div>
+                     
+                        {/* <div className="col-xl-2 col-md-4 col-sm-6 mt-3 anime-2 center-card">
+                            
+                            <div className="card home_card">
+                                <div className="card-body" style={{ textAlign: "center" }}>
+                                    <a href="https://docs.google.com/spreadsheets/d/1NmIcFvsnA_aT2WrNZxEbpGMT9sIaHbAhW1vGmYahK4o/edit?resourcekey=&gid=207824478#gid=207824478" target="_blank" rel="noreferrer">
+                                 
+                                        <img height="100px" width="100px" src="./images/um.jpg" alt="B2B Portal" />
+                                  
+
+                                    </a>
+                                    <h4 className="card-title">USER MANUAL </h4>
+                                </div>
+                            </div>
+                        </div> */}
+                    
+                        <div className="col-five-equal col-md-4 col-sm-6 mt-3 anime-2 center-card">
+                            <div className="card home_card">
+                                <div className="card-body" style={{ textAlign: "center" }}>
+                                    <a href="https://hikmicrotech.app.box.com/s/dfdw4twyw1u3dimyeeg4e8imi12h8jba/folder/246463895379" target="_blank" rel="noreferrer">
+                                        <img height="100px" width="100px" src="./images/vd.avif" alt="B2B Portal" />
+                                    </a>
+                                    <h4 className="card-title">VIDEOS</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-five-equal col-md-4 col-sm-6 mt-3 anime-2 center-card">
+                            <div className="card home_card">
+                                <div className="card-body" style={{ textAlign: "center" }}>
+                       <a href="https://hikmicrotech.app.box.com/s/dfdw4twyw1u3dimyeeg4e8imi12h8jba/folder/246768304537" target="_blank" rel="noreferrer">
+                                        <img height="100px" width="100px" src="./images/smp.jpg" alt="B2B Portal" />
+                                </a> 
+                                    <h4 className="card-title">SOCIAL MEDIA POSTERS </h4>
+                                </div>
+                            </div>
+                        </div>
+                      
+
+                        {/* <div className="col-xl-2 col-md-4 col-sm-6 mt-3 anime-2 center-card">
+                            <div className="card home_card">
+                                <div className="card-body" style={{ textAlign: "center" }}>
+                       <a href="https://drive.google.com/drive/folders/1y4J2_r2yw2yZ48x44qX07m8NEkREH2Yy" target="_blank" rel="noreferrer">
+                                        <img height="100px" width="100px" src="./images/tr.jpg" alt="B2B Portal" />
+                                </a> 
+                                    <h4 className="card-title">TRIFOLD AU </h4>
+                                </div>
+                            </div>
+                        </div>
+
+
+                         <div className="col-xl-2 col-md-4 col-sm-6 mt-3 anime-2 center-card">
+                            <div className="card home_card">
+                                <div className="card-body" style={{ textAlign: "center" }}>
+                       <a href="https://drive.google.com/drive/folders/1RsQYKoWpZ1H7WrtXj1ZmzMXGmPD13MQX" target="_blank" rel="noreferrer">
+                                        <img height="100px" width="100px" src="./images/trw.webp" alt="B2B Portal" />
+                                </a> 
+                                    <h4 className="card-title">TRIFOLD NZ </h4>
+                                </div>
+                            </div>
+                        </div> */}
+
+                       
+                    </div>
+                </div>
+                 </div>
+
+
+
+             
+            </div>
+            <Footer/>
+        </div>
+    );
+};
+
+export default LYNX6;

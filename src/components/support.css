@@ -1,0 +1,165 @@
+/* General font and background */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main outer container */
+.support-container {
+  max-width: 1300px;
+  margin: 80px auto 30px;
+  padding: 0 20px;
+}
+
+/* Content wrapper centered */
+.support-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* White content box */
+.support-box {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Main heading */
+.support-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Image styling */
+.support-image {
+  width: 100%;
+  max-width: 1300px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Subheading */
+.support-subheading {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+/* Paragraphs */
+.support-text {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Red CTA Button */
+.support-button {
+  margin-top: 0; /* remove extra top margin, handled by group */
+  background-color: #d90429;
+  color: white;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  user-select: none;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap; /* keeps text in one line */
+  min-width: 150px; /* ensures buttons aren’t too narrow */
+  max-width: 280px; /* limits button max width on desktop */
+}
+
+/* Hover effect */
+.support-button:hover,
+.support-button:focus {
+  background-color: #a0001f;
+  transform: scale(1.03);
+  outline: none;
+}
+
+/* Button group layout */
+.support-button-group {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Reuse support-button styles for anchor tags */
+.support-button-group a.support-button {
+  /* already styled above */
+}
+
+/* Responsive for tablets */
+@media (max-width: 768px) {
+  .support-container {
+    padding: 0 15px;
+  }
+
+  .support-heading {
+    font-size: 40px;
+  }
+
+  .support-image {
+    max-width: 100%;
+  }
+
+  /* Buttons become full width with max width */
+  .support-button,
+  .support-button-group a.support-button {
+    width: 100%;
+    max-width: 400px;
+    white-space: normal; /* allow text wrap on smaller screens */
+  }
+
+  .support-button-group {
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+/* Responsive for phones */
+@media (max-width: 480px) {
+  .support-heading  {
+    font-size: 20px;
+  }
+
+  .support-container{
+    padding-top: 0px;
+  }
+
+  .support-text,
+  .support-subheading {
+    font-size: 1rem;
+  }
+
+  .support-button,
+  .support-button-group a.support-button {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    max-width: 100%; /* full width on phones */
+    white-space: normal; /* wrap text if needed */
+  }
+
+  .support-button-group {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

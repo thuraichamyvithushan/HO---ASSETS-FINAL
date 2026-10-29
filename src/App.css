@@ -1,0 +1,34 @@
+/* Ensure full height for html and body */
+html, body, #root {
+  height: 100%;
+  padding: 0;
+}
+
+
+/* App container takes full space */
+.App {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional: make route pages fill remaining height after Navbar */
+.main-cent {
+  flex: 1;
+  padding: 20px;
+}
+
+
+/* App fills full height and scrolls only internally if needed */
+.App {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+
+/* Make routes area fill remaining height */
+.routes-container {
+  flex: 1;
+  overflow: hidden;
+}

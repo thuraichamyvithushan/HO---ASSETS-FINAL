@@ -1,0 +1,215 @@
+/* Ensure full page background */
+/* html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+} */
+
+/* Main container with background */
+.website-container {
+  padding-top: 40px;
+  font-family: 'Poppins', sans-serif;
+  min-height: 95vh;
+  background-image: url('../../public/images/whi.jpg');
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #eee;
+}
+
+/* Responsive fix for mobile devices */
+@media (max-width: 768px) {
+  .website-container {
+    background-attachment: scroll !important;
+    background-size: cover !important;
+    background-position: top center !important;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .website-container {
+    padding-top: 40px;
+  }
+}
+
+/* Grid Rows */
+.website-grid.first-row,
+.website-grid.second-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.website-grid.first-row {
+  gap: 100px;
+  margin-top: 10px;
+  max-width: 1000px;
+}
+
+.website-grid.second-row {
+  gap: 90px;
+  margin-top: 30px;
+}
+
+/* Card Wrapper */
+.website-card-wrapper {
+  width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.website-card-wrapper:hover {
+  transform: translateY(-6px);
+  z-index: 10;
+}
+
+/* Card Box */
+.website-card {
+  width: 250px;
+  height: 200px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.website-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.15);
+}
+
+/* Logo */
+.website-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Label Box */
+.website-label-box {
+  width: 250px;
+  background: #ffffff;
+  padding: 10px 15px;
+  border-radius: 12px;
+  margin-top: 12px;
+  box-shadow: 0 4px 8px rgba(180, 154, 154, 0.4);
+  transition: 0.3s ease;
+}
+
+.website-label-box:hover {
+  background: #d4d3d3;
+  box-shadow: 0 6px 12px rgba(180, 154, 154, 0.7);
+}
+
+.website-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #180f0f;
+  margin: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .website-card,
+  .website-label-box {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .website-card-wrapper {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .website-grid.first-row,
+  .website-grid.second-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .website-card-wrapper {
+    width: 95%;
+    max-width: 300px;
+  }
+
+  .website-card,
+  .website-label-box {
+    width: 100%;
+  }
+
+  .website-grid.first-row,
+  .website-grid.second-row {
+    gap: 20px;
+  }
+}
+
+
+
+.website-container h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #5d5d5d;
+  margin: 50px 0 40px 0;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .website-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .website-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+  }
+}
+
+
+
+/* Add bottom padding on small devices */
+@media (max-width: 768px) {
+  .website-container {
+    padding-bottom: 40px;  /* or any value you want */
+  }
+}
+
+@media (max-width: 480px) {
+  .website-container {
+    padding-bottom: 30px;  /* smaller padding for very small devices */
+  }
+}

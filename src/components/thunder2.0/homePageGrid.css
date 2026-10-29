@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.under {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 8px;
+  transition: color 0.3s ease;
+  text-align: center;
+  margin-bottom: -5px;
+}
+
+/* Tiles */
+.tile-image {
+  height: 10rem;
+  background-color: #cbd5e0;
+  border-radius: 0.5rem;
+}
+
+.tile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.tile-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.tile-link {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  background-color: #cbd5e0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2d3748;
+}
+
+.card-body {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+              rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+              rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 8px;
+  border: none;
+}
+
+.card {
+  border: none;
+}
+
+.anime-2 {
+  transition: all 0.2s ease;
+}
+
+.anime-2:hover {
+  transform: scale(0.9);
+}
+
+img {
+  object-fit: contain;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+.home_card {
+  width: 240px;
+}
+
+.home_row {
+  justify-self: center;
+}
+
+.mt-5 {
+  margin-top: 0px !important;
+}
+
+.market,
+.sales,
+.oso {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(10, 55, 45, 0.2);
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  transition: all 0.4s ease;
+  backdrop-filter: blur(6px);
+  text-align: center;
+}
+
+.oso {
+  margin-bottom: 20px;
+}
+
+.market:hover,
+.sales:hover,
+.oso:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
+}
+
+.market h2,
+.sales h2,
+.oso h2 {
+  color: #672423;
+  text-align: center;
+}
+
+.center-card {
+  display: flex;
+  justify-content: center;
+}
+
+.col-xl-4 {
+  width: 27%;
+}
+
+.main-cent {
+  display: flex;
+  justify-content: center;
+}
+
+.container.main-cent {
+  display: flex;
+  flex-direction: column;
+}
+
+.cent {
+  width: 100%;
+}
+
+.col-xl-3 {
+  width: 25%;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.col-eight {
+  flex: 0 0 calc(100% / 8);
+  max-width: calc(100% / 8);
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.card.home_card {
+  width: 100%;
+  max-width: 200px;
+}
+
+/* ===== Responsive ===== */
+
+/* Medium screens (tablets, 992px and below) */
+@media (max-width: 992px) {
+  .col-xl-4 {
+    width: 45%; /* two per row */
+  }
+  .col-xl-3 {
+    width: 45%;
+  }
+  .col-eight {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+  .home_card {
+    width: 90%;
+    max-width: none;
+  }
+}
+
+/* Small screens (phones, 576px and below) */
+@media (max-width: 576px) {
+  .col-xl-4,
+  .col-xl-3,
+  .col-eight {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .market,
+  .sales,
+  .oso {
+    padding: 16px;
+    margin-top: 15px;
+  }
+  .under {
+    font-size: 20px;
+  }
+  .tile-image {
+    height: 8rem;
+  }
+  .tile-heading {
+    font-size: 1.25rem;
+  }
+  .tile-link {
+    font-size: 0.65rem;
+    padding: 0.4rem 0.8rem;
+  }
+  .card.home_card {
+    max-width: 100%;
+  }
+}
